@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20190129 17:36:15.750" generator="Robot 3.0.4 (Python 2.7.15 on darwin)">
+<suite source="/Users/jobsity/PycharmProjects/automation/TC_003_Rollkall_Login.robot" id="s1" name="TC 003 Rollkall Login">
+<test id="s1-t1" name="TC_001 Login page open">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190129 17:36:16.538" level="INFO">Opening browser 'chrome' to base url 'https://rollkallportal2-jobevents.azurewebsites.net/'.</msg>
+<status status="PASS" endtime="20190129 17:37:27.474" starttime="20190129 17:36:16.538"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${userinput}</arg>
+<arg>zuriel+agency@rollkall.com</arg>
+</arguments>
+<msg timestamp="20190129 17:37:27.478" level="INFO">Typing text 'zuriel+agency@rollkall.com' into text field 'xpath = //*[@id="app"]/div/div[1]/div/div/div[1]/span/*[@type='email']'.</msg>
+<status status="PASS" endtime="20190129 17:37:27.958" starttime="20190129 17:37:27.477"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passinput}</arg>
+<arg>test123</arg>
+</arguments>
+<msg timestamp="20190129 17:37:27.959" level="INFO">Typing text 'test123' into text field 'xpath = //*[@id="app"]/div/div[1]/div/div/div[2]/span/*[@type='password']'.</msg>
+<status status="PASS" endtime="20190129 17:37:28.107" starttime="20190129 17:37:27.959"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${subButton}</arg>
+</arguments>
+<msg timestamp="20190129 17:37:28.108" level="INFO">Clicking element 'xpath = //*[@id="app"]/div/div[1]/div/div/div[3]/button'.</msg>
+<status status="PASS" endtime="20190129 17:37:33.380" starttime="20190129 17:37:28.107"></status>
+</kw>
+<status status="PASS" endtime="20190129 17:37:33.380" critical="yes" starttime="20190129 17:36:16.537"></status>
+</test>
+<status status="PASS" endtime="20190129 17:37:33.417" starttime="20190129 17:36:15.752"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TC 003 Rollkall Login" pass="1">TC 003 Rollkall Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
