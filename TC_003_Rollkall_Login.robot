@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 
 *** Variables ***
 ${browser}  chrome
-${url}  https://rollkallportal2-jobevents.azurewebsites.net/
+${url}  https://rollkallportal-qa.azurewebsites.net
 ${userinput}    xpath = //*[@id="app"]/div/div[1]/div/div/div[1]/span/*[@type='email']
 ${passinput}    xpath = //*[@id="app"]/div/div[1]/div/div/div[2]/span/*[@type='password']
 ${subButton}    xpath = //*[@id="app"]/div/div[1]/div/div/div[3]/button
