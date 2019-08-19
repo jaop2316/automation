@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190819 11:24:22.339" rpa="false">
-<suite id="s1" name="TC 003 Rollkall Login" source="C:\Users\Administrator\Documents\Projects\automation\TC_003_Rollkall_Login.robot">
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190819 12:16:27.389" rpa="false">
+<suite id="s1" name="TC 001 Rollkall Login" source="C:\Users\Administrator\Documents\Projects\automation\TC_001_Rollkall_Login.robot">
 <test id="s1-t1" name="TC_001 Login page open">
+<kw name="Open Browser and wait until logo is loaded" library="resources">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
 <arguments>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20190819 11:24:22.792" level="INFO">Opening browser 'chrome' to base url 'https://rollkallportal-qa.azurewebsites.net'.</msg>
-<status status="PASS" starttime="20190819 11:24:22.792" endtime="20190819 11:24:32.123"></status>
+<msg timestamp="20190819 12:16:27.650" level="INFO">Opening browser 'chrome' to base url 'https://rollkallportal-qa.azurewebsites.net'.</msg>
+<status status="PASS" starttime="20190819 12:16:27.649" endtime="20190819 12:16:33.245"></status>
+</kw>
+<status status="PASS" starttime="20190819 12:16:27.649" endtime="20190819 12:16:33.245"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -17,8 +20,8 @@
 <arg>${userinput}</arg>
 <arg>zuriel+agency@rollkall.com</arg>
 </arguments>
-<msg timestamp="20190819 11:24:32.130" level="INFO">Typing text 'zuriel+agency@rollkall.com' into text field 'xpath = //*[@id="app"]/div/div[1]/div/div/div[1]/span/*[@type='email']'.</msg>
-<status status="PASS" starttime="20190819 11:24:32.127" endtime="20190819 11:24:33.015"></status>
+<msg timestamp="20190819 12:16:33.247" level="INFO">Typing text 'zuriel+agency@rollkall.com' into text field 'xpath = //*[@id="app"]/div/div[1]/div/div/div[1]/span/*[@type='email']'.</msg>
+<status status="PASS" starttime="20190819 12:16:33.246" endtime="20190819 12:16:33.687"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -26,20 +29,20 @@
 <arg>${passinput}</arg>
 <arg>test123</arg>
 </arguments>
-<msg timestamp="20190819 11:24:33.017" level="INFO">Typing text 'test123' into text field 'xpath = //*[@id="app"]/div/div[1]/div/div/div[2]/span/*[@type='password']'.</msg>
-<status status="PASS" starttime="20190819 11:24:33.016" endtime="20190819 11:24:33.444"></status>
+<msg timestamp="20190819 12:16:33.688" level="INFO">Typing text 'test123' into text field 'xpath = //*[@id="app"]/div/div[1]/div/div/div[2]/span/*[@type='password']'.</msg>
+<status status="PASS" starttime="20190819 12:16:33.688" endtime="20190819 12:16:33.862"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${subButton}</arg>
 </arguments>
-<msg timestamp="20190819 11:24:33.447" level="INFO">Clicking element 'xpath = //*[@id="app"]/div/div[1]/div/div/div[3]/button'.</msg>
-<status status="PASS" starttime="20190819 11:24:33.446" endtime="20190819 11:24:33.681"></status>
+<msg timestamp="20190819 12:16:33.863" level="INFO">Clicking element 'xpath = //*[@id="app"]/div/div[1]/div/div/div[3]/button'.</msg>
+<status status="PASS" starttime="20190819 12:16:33.863" endtime="20190819 12:16:33.951"></status>
 </kw>
-<status status="PASS" starttime="20190819 11:24:22.791" endtime="20190819 11:24:33.682" critical="yes"></status>
+<status status="PASS" starttime="20190819 12:16:27.648" endtime="20190819 12:16:33.952" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20190819 11:24:22.343" endtime="20190819 11:24:33.687"></status>
+<status status="PASS" starttime="20190819 12:16:27.391" endtime="20190819 12:16:33.952"></status>
 </suite>
 <statistics>
 <total>
@@ -49,7 +52,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="TC 003 Rollkall Login">TC 003 Rollkall Login</stat>
+<stat pass="1" fail="0" id="s1" name="TC 001 Rollkall Login">TC 001 Rollkall Login</stat>
 </suite>
 </statistics>
 <errors>
