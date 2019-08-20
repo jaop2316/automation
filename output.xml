@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190820 16:32:07.944" rpa="false">
-<suite id="s1" name="TC 001 Rollkall Login" source="C:\Users\Administrator\Documents\Projects\automation\TC_001_Rollkall_Login.robot">
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190820 17:52:28.568" rpa="false">
+<suite id="s1" name="TC 002 Forget Password" source="C:\Users\Administrator\Documents\Projects\automation\TC_002_Forget_Password.robot">
 <test id="s1-t1" name="TC_001 Open Browser and load the portal">
 <kw name="Open Browser and wait until logo is loaded" library="resources">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -9,109 +9,75 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20190820 16:32:08.172" level="INFO">Opening browser 'chrome' to base url 'https://rollkallportal-qa.azurewebsites.net'.</msg>
-<status status="PASS" starttime="20190820 16:32:08.171" endtime="20190820 16:32:16.623"></status>
+<msg timestamp="20190820 17:52:28.793" level="INFO">Opening browser 'chrome' to base url 'https://rollkallportal-qa.azurewebsites.net'.</msg>
+<status status="PASS" starttime="20190820 17:52:28.793" endtime="20190820 17:52:34.017"></status>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
 <arguments>
 <arg>${rollkallLogo}</arg>
 </arguments>
-<msg timestamp="20190820 16:32:16.652" level="INFO">Current page contains element 'xpath =//*[@id="app"]/div/div[1]/div/h1/img'.</msg>
-<status status="PASS" starttime="20190820 16:32:16.623" endtime="20190820 16:32:16.652"></status>
+<msg timestamp="20190820 17:52:34.033" level="INFO">Current page contains element 'xpath =//*[@id="app"]/div/div[1]/div/h1/img'.</msg>
+<status status="PASS" starttime="20190820 17:52:34.017" endtime="20190820 17:52:34.034"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190820 16:32:18.654" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20190820 16:32:16.653" endtime="20190820 16:32:18.654"></status>
+<msg timestamp="20190820 17:52:36.036" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20190820 17:52:34.034" endtime="20190820 17:52:36.036"></status>
 </kw>
-<status status="PASS" starttime="20190820 16:32:08.171" endtime="20190820 16:32:18.654"></status>
+<status status="PASS" starttime="20190820 17:52:28.793" endtime="20190820 17:52:36.036"></status>
 </kw>
-<status status="PASS" starttime="20190820 16:32:08.171" endtime="20190820 16:32:18.655" critical="yes"></status>
+<status status="PASS" starttime="20190820 17:52:28.792" endtime="20190820 17:52:36.036" critical="yes"></status>
 </test>
-<test id="s1-t2" name="TC_002 Type the user's credentials (Agency user)">
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${userinput}</arg>
-<arg>zuriel+age@rollkall.com</arg>
-</arguments>
-<msg timestamp="20190820 16:32:18.657" level="INFO">Typing text 'zuriel+age@rollkall.com' into text field 'xpath = //*[@id="app"]/div/div[1]/div/div/div[1]/span/*[@type='email']'.</msg>
-<status status="PASS" starttime="20190820 16:32:18.657" endtime="20190820 16:32:18.863"></status>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${passinput}</arg>
-<arg>test123</arg>
-</arguments>
-<msg timestamp="20190820 16:32:18.864" level="INFO">Typing text 'test123' into text field 'xpath = //*[@id="app"]/div/div[1]/div/div/div[2]/span/*[@type='password']'.</msg>
-<status status="PASS" starttime="20190820 16:32:18.864" endtime="20190820 16:32:18.976"></status>
-</kw>
-<status status="PASS" starttime="20190820 16:32:18.656" endtime="20190820 16:32:18.977" critical="yes"></status>
-</test>
-<test id="s1-t3" name="TC_003 Submit login information">
+<test id="s1-t2" name="TC_002 Open 'Forget password' form">
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>${subButton}</arg>
+<arg>${forgetPassLink}</arg>
 </arguments>
-<msg timestamp="20190820 16:32:18.978" level="INFO">Clicking element 'xpath = //*[@id="app"]/div/div[1]/div/div/div[3]/button'.</msg>
-<status status="PASS" starttime="20190820 16:32:18.978" endtime="20190820 16:32:19.035"></status>
+<msg timestamp="20190820 17:52:36.038" level="INFO">Clicking element 'xpath = //*[@id="app"]/div/div[1]/div/a'.</msg>
+<status status="PASS" starttime="20190820 17:52:36.038" endtime="20190820 17:52:36.815"></status>
 </kw>
-<status status="PASS" starttime="20190820 16:32:18.977" endtime="20190820 16:32:19.036" critical="yes"></status>
+<status status="PASS" starttime="20190820 17:52:36.037" endtime="20190820 17:52:36.816" critical="yes"></status>
 </test>
-<test id="s1-t4" name="TC_004 Jobs page is displayed">
-<kw name="Wait Until Page Contains" library="SeleniumLibrary">
-<doc>Waits until ``text`` appears on current page.</doc>
+<test id="s1-t3" name="TC_003 Enter email">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<arg>Jobs</arg>
+<arg>${emailInput}</arg>
+<arg>zuriel+agency@rollkall.com</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20190820 16:32:24.434" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20190820 16:32:24.090" endtime="20190820 16:32:24.435"></status>
+<msg timestamp="20190820 17:52:36.817" level="INFO">Typing text 'zuriel+agency@rollkall.com' into text field 'xpath = //*[@id="Email"]'.</msg>
+<status status="PASS" starttime="20190820 17:52:36.817" endtime="20190820 17:52:36.987"></status>
 </kw>
-<msg timestamp="20190820 16:32:24.436" level="FAIL">Text 'Jobs' did not appear in 5 seconds.</msg>
-<status status="FAIL" starttime="20190820 16:32:19.037" endtime="20190820 16:32:24.436"></status>
-</kw>
-<status status="FAIL" starttime="20190820 16:32:19.036" endtime="20190820 16:32:24.437" critical="yes">Text 'Jobs' did not appear in 5 seconds.</status>
+<status status="PASS" starttime="20190820 17:52:36.817" endtime="20190820 17:52:36.988" critical="yes"></status>
 </test>
-<test id="s1-t5" name="TC_005 Check for alerts">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
+<test id="s1-t4" name="TC_004 Submit form">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>${alertPop}</arg>
+<arg>${sendButton}</arg>
 </arguments>
-<status status="PASS" starttime="20190820 16:32:24.440" endtime="20190820 16:32:24.468"></status>
+<msg timestamp="20190820 17:52:36.989" level="INFO">Clicking element 'xpath = //*[@id="btnSubmit"]'.</msg>
+<status status="PASS" starttime="20190820 17:52:36.989" endtime="20190820 17:52:37.284"></status>
 </kw>
-<kw name="Get Text" library="SeleniumLibrary">
-<doc>Returns the text value of element identified by ``locator``.</doc>
-<arguments>
-<arg>${alertPop}</arg>
-</arguments>
-<assign>
-<var>${alert}</var>
-</assign>
-<msg timestamp="20190820 16:32:24.495" level="INFO">${alert} = Access Denied
-Invalid email/password combination. Please try again.</msg>
-<status status="PASS" starttime="20190820 16:32:24.469" endtime="20190820 16:32:24.495"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${alert}</arg>
-</arguments>
-<msg timestamp="20190820 16:32:24.496" level="INFO">Access Denied
-Invalid email/password combination. Please try again.</msg>
-<status status="PASS" starttime="20190820 16:32:24.496" endtime="20190820 16:32:24.497"></status>
-</kw>
-<status status="PASS" starttime="20190820 16:32:24.439" endtime="20190820 16:32:24.497" critical="yes"></status>
+<status status="PASS" starttime="20190820 17:52:36.989" endtime="20190820 17:52:37.285" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20190820 16:32:07.946" endtime="20190820 16:32:24.499"></status>
+<test id="s1-t5" name="TC_005 Sent a reset link page is displayed">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${validationSummary}" == 'Invalid Email Address'</arg>
+</arguments>
+<msg timestamp="20190820 17:52:37.288" level="FAIL">Keyword 'BuiltIn.Run Keyword If' expected at least 2 arguments, got 1.</msg>
+<status status="FAIL" starttime="20190820 17:52:37.288" endtime="20190820 17:52:37.288"></status>
+</kw>
+<status status="FAIL" starttime="20190820 17:52:37.286" endtime="20190820 17:52:37.289" critical="yes">Keyword 'BuiltIn.Run Keyword If' expected at least 2 arguments, got 1.</status>
+</test>
+<status status="FAIL" starttime="20190820 17:52:28.570" endtime="20190820 17:52:37.290"></status>
 </suite>
 <statistics>
 <total>
@@ -121,7 +87,7 @@ Invalid email/password combination. Please try again.</msg>
 <tag>
 </tag>
 <suite>
-<stat pass="4" fail="1" id="s1" name="TC 001 Rollkall Login">TC 001 Rollkall Login</stat>
+<stat pass="4" fail="1" id="s1" name="TC 002 Forget Password">TC 002 Forget Password</stat>
 </suite>
 </statistics>
 <errors>
